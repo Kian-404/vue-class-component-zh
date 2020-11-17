@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Hooks 自动完成 | Vue Class Component</title>
+    <meta name="generator" content="VuePress 1.7.1">
+    <link rel="icon" href="/vue-class-component-zh/logo.png">
+    <link rel="manifest" href="/vue-class-component-zh/manifest.json">
+    <link rel="apple-touch-icon" href="/vue-class-component-zh/icons/apple-touch-icon-152x152.png">
+    <link rel="mask-icon" href="/vue-class-component-zh/icons/safari-pinned-tab.svg" color="#3eaf7c">
+    <meta name="description" content="ECMAScript / TypeScript decorator for class-style Vue components">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileImage" content="/icons/msapplication-icon-144x144.png">
+    <meta name="msapplication-TileColor" content="#000000">
+    
+    <link rel="preload" href="/vue-class-component-zh/assets/css/0.styles.8adf33f9.css" as="style"><link rel="preload" href="/vue-class-component-zh/assets/js/app.9b535468.js" as="script"><link rel="preload" href="/vue-class-component-zh/assets/js/2.1606ceab.js" as="script"><link rel="preload" href="/vue-class-component-zh/assets/js/16.ab01c8e6.js" as="script"><link rel="prefetch" href="/vue-class-component-zh/assets/js/10.07a4a202.js"><link rel="prefetch" href="/vue-class-component-zh/assets/js/11.73a71981.js"><link rel="prefetch" href="/vue-class-component-zh/assets/js/12.de2c3f47.js"><link rel="prefetch" href="/vue-class-component-zh/assets/js/13.925c8b9c.js"><link rel="prefetch" href="/vue-class-component-zh/assets/js/14.d6928efd.js"><link rel="prefetch" href="/vue-class-component-zh/assets/js/15.80e2cee5.js"><link rel="prefetch" href="/vue-class-component-zh/assets/js/17.a5b430bf.js"><link rel="prefetch" href="/vue-class-component-zh/assets/js/18.15eec4ba.js"><link rel="prefetch" href="/vue-class-component-zh/assets/js/19.6cca8a55.js"><link rel="prefetch" href="/vue-class-component-zh/assets/js/20.d51954bc.js"><link rel="prefetch" href="/vue-class-component-zh/assets/js/3.424bd4ee.js"><link rel="prefetch" href="/vue-class-component-zh/assets/js/4.23b4e2fd.js"><link rel="prefetch" href="/vue-class-component-zh/assets/js/5.15717fc6.js"><link rel="prefetch" href="/vue-class-component-zh/assets/js/6.f4fc4308.js"><link rel="prefetch" href="/vue-class-component-zh/assets/js/7.36978bb5.js"><link rel="prefetch" href="/vue-class-component-zh/assets/js/8.aa48a3ba.js"><link rel="prefetch" href="/vue-class-component-zh/assets/js/9.86b2724d.js">
+    <link rel="stylesheet" href="/vue-class-component-zh/assets/css/0.styles.8adf33f9.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/vue-class-component-zh/" class="home-link router-link-active"><!----> <span class="site-name">Vue Class Component</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/vue-class-component-zh/" class="nav-link">
+  指南
+</a></div><div class="nav-item"><a href="/vue-class-component-zh/api/" class="nav-link">
+  API 参考
+</a></div> <a href="https://github.com/Kian-404/vue-class-component-zh" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/vue-class-component-zh/" class="nav-link">
+  指南
+</a></div><div class="nav-item"><a href="/vue-class-component-zh/api/" class="nav-link">
+  API 参考
+</a></div> <a href="https://github.com/Kian-404/vue-class-component-zh" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><a href="/vue-class-component-zh/" aria-current="page" class="sidebar-link">总览</a></li><li><a href="/vue-class-component-zh/guide/installation.html" class="sidebar-link">安装</a></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>通用指南</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/vue-class-component-zh/guide/class-component.html" class="sidebar-link">类组件</a></li><li><a href="/vue-class-component-zh/guide/additional-hooks.html" class="sidebar-link">附带的钩子函数</a></li><li><a href="/vue-class-component-zh/guide/custom-decorators.html" class="sidebar-link">自定义装饰器</a></li><li><a href="/vue-class-component-zh/guide/extend-and-mixins.html" class="sidebar-link">继承和混入</a></li><li><a href="/vue-class-component-zh/guide/caveats.html" class="sidebar-link">类组件的注意事项</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>TypeScript 指南</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/vue-class-component-zh/guide/props-definition.html" class="sidebar-link">Props 定义</a></li><li><a href="/vue-class-component-zh/guide/property-type-declaration.html" class="sidebar-link">属性类型定义</a></li><li><a href="/vue-class-component-zh/guide/refs-type-extension.html" class="sidebar-link">$refs 类型扩展</a></li><li><a href="/vue-class-component-zh/guide/hooks-auto-complete.html" aria-current="page" class="active sidebar-link">Hooks 自动完成</a></li><li><a href="/vue-class-component-zh/guide/annotate-component-type-in-decorator.html" class="sidebar-link">装饰器组件类型</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="hooks-自动完成"><a href="#hooks-自动完成" class="header-anchor">#</a> Hooks 自动完成</h1> <p><code>Vue Class Component</code> 提供了内置的钩子类型，可为 <code>TypeScript</code> 的类组件声明中的 <code>data</code>，<code>render</code> 和其他生命周期钩子函数实现自动完成。 要启用它，你需要导入位于<code>vue-class-component/hooks</code> 的钩子类型。</p> <div class="language-ts extra-class"><pre class="language-ts"><code><span class="token comment">// main.ts</span>
+<span class="token keyword">import</span> <span class="token string">'vue-class-component/hooks'</span> <span class="token comment">// import hooks type to enable auto-complete</span>
+<span class="token keyword">import</span> Vue <span class="token keyword">from</span> <span class="token string">'vue'</span>
+<span class="token keyword">import</span> App <span class="token keyword">from</span> <span class="token string">'./App.vue'</span>
+
+<span class="token keyword">new</span> <span class="token class-name">Vue</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  <span class="token function-variable function">render</span><span class="token operator">:</span> h <span class="token operator">=&gt;</span> <span class="token function">h</span><span class="token punctuation">(</span>App<span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">$mount</span><span class="token punctuation">(</span><span class="token string">'#app'</span><span class="token punctuation">)</span>
+</code></pre></div><p>你如果想要使其与自定义钩子函数一起使用，你可以自己手动添加它：</p> <div class="language-ts extra-class"><pre class="language-ts"><code><span class="token keyword">import</span> Vue <span class="token keyword">from</span> <span class="token string">'vue'</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> Route<span class="token punctuation">,</span> RawLocation <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'vue-router'</span>
+
+<span class="token keyword">declare</span> <span class="token keyword">module</span> <span class="token string">'vue/types/vue'</span> <span class="token punctuation">{</span>
+  <span class="token comment">// Augment component instance type</span>
+  <span class="token class-name"><span class="token keyword">interface</span></span> Vue <span class="token punctuation">{</span>
+    beforeRouteEnter<span class="token operator">?</span><span class="token punctuation">(</span>
+      to<span class="token operator">:</span> Route<span class="token punctuation">,</span>
+      <span class="token keyword">from</span><span class="token operator">:</span> Route<span class="token punctuation">,</span>
+      next<span class="token operator">:</span> <span class="token punctuation">(</span>to<span class="token operator">?</span><span class="token operator">:</span> RawLocation <span class="token operator">|</span> <span class="token boolean">false</span> <span class="token operator">|</span> <span class="token punctuation">(</span><span class="token punctuation">(</span>vm<span class="token operator">:</span> Vue<span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token keyword">void</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token keyword">void</span>
+    <span class="token punctuation">)</span><span class="token operator">:</span> <span class="token keyword">void</span>
+
+    beforeRouteLeave<span class="token operator">?</span><span class="token punctuation">(</span>
+      to<span class="token operator">:</span> Route<span class="token punctuation">,</span>
+      <span class="token keyword">from</span><span class="token operator">:</span> Route<span class="token punctuation">,</span>
+      next<span class="token operator">:</span> <span class="token punctuation">(</span>to<span class="token operator">?</span><span class="token operator">:</span> RawLocation <span class="token operator">|</span> <span class="token boolean">false</span> <span class="token operator">|</span> <span class="token punctuation">(</span><span class="token punctuation">(</span>vm<span class="token operator">:</span> Vue<span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token keyword">void</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token keyword">void</span>
+    <span class="token punctuation">)</span><span class="token operator">:</span> <span class="token keyword">void</span>
+
+    beforeRouteUpdate<span class="token operator">?</span><span class="token punctuation">(</span>
+      to<span class="token operator">:</span> Route<span class="token punctuation">,</span>
+      <span class="token keyword">from</span><span class="token operator">:</span> Route<span class="token punctuation">,</span>
+      next<span class="token operator">:</span> <span class="token punctuation">(</span>to<span class="token operator">?</span><span class="token operator">:</span> RawLocation <span class="token operator">|</span> <span class="token boolean">false</span> <span class="token operator">|</span> <span class="token punctuation">(</span><span class="token punctuation">(</span>vm<span class="token operator">:</span> Vue<span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token keyword">void</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token keyword">void</span>
+    <span class="token punctuation">)</span><span class="token operator">:</span> <span class="token keyword">void</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/Kian-404/vue-class-component-zh/edit/master/docs/guide/hooks-auto-complete.md" target="_blank" rel="noopener noreferrer">帮助我们改善此页面!</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <div class="last-updated"><span class="prefix">最新更新时间:</span> <span class="time">11/17/2020, 11:00:31 AM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/vue-class-component-zh/guide/refs-type-extension.html" class="prev">
+        $refs 类型扩展
+      </a></span> <span class="next"><a href="/vue-class-component-zh/guide/annotate-component-type-in-decorator.html">
+        装饰器组件类型
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/vue-class-component-zh/assets/js/app.9b535468.js" defer></script><script src="/vue-class-component-zh/assets/js/2.1606ceab.js" defer></script><script src="/vue-class-component-zh/assets/js/16.ab01c8e6.js" defer></script>
+  </body>
+</html>
