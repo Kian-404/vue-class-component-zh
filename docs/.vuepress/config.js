@@ -1,6 +1,6 @@
 module.exports = {
   title: 'Vue Class Component',
-  base: '/vue-class-component/',
+  base: '/vue-class-component-zh/',
   description: 'ECMAScript / TypeScript decorator for class-style Vue components',
   head: [
     ['link', { rel: 'icon', href: '/logo.png' }],
